@@ -1,0 +1,10 @@
+# Ignoring the video files
+*.mp4
+CoolProgramming/data/*.mp4
+LiveOnLinux/data/*.mp4
+misc/data/*.mp4
+
+# Ignoring the video thumbnails
+CoolProgramming/thumbnails/
+LiveOnLinux/thumbnails/
+misc/thumbnails/

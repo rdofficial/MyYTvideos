@@ -1,0 +1,15 @@
+#!/bin/bash
+# The script to clean the python cache (__pycache__) from the linux file system
+
+echo "Scanning the filesystem for python cache folders"
+list=$( find / | grep __pycache__ )
+
+echo "Deleting the python cache folders"
+for i in $list
+do
+	if [[ -d $i ]]; then
+		rm -r $i
+	fi
+done
+
+echo "All python cache folders are deleted"
